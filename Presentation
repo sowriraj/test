@@ -1,0 +1,160 @@
+Here’s a sample script you can use to present the content in your meeting. This script will guide you through each slide and help you engage your audience effectively.
+
+
+---
+
+Slide 1: Title Slide
+
+Presenter Script: "Good morning/afternoon, everyone. Thank you for joining today's session. I'm excited to walk you through how to deploy an Angular and .NET application to OpenShift, covering the architecture, deployment process, and best practices. By the end, you'll have a good understanding of how to get both your frontend and backend running on OpenShift. Let's get started."
+
+
+---
+
+Slide 2: Introduction
+
+Presenter Script: "To begin, let’s briefly introduce the core technologies involved in our deployment:
+
+Angular is a powerful front-end framework that we use to build dynamic and responsive web applications.
+
+.NET, specifically .NET Core, is our backend technology used for building RESTful APIs that serve the Angular frontend.
+
+OpenShift is our container orchestration platform, built on top of Kubernetes, which will manage our application deployment, scaling, and monitoring.
+
+
+This presentation will focus on how these technologies come together in the deployment process."
+
+
+---
+
+Slide 3: Architecture Overview
+
+Presenter Script: "Here’s an architectural overview of our system. You can see how the Angular frontend interacts with the .NET API, and both services are deployed and managed by OpenShift. OpenShift handles the routing, load balancing, and scaling of our application pods, making it a robust platform for both frontend and backend deployments."
+
+[Point to the architecture diagram as you explain the interaction between the components.]
+
+
+---
+
+Slide 4: Prerequisites for Deployment
+
+Presenter Script: "Before we start deploying, let’s go over the prerequisites:
+
+First, we need to build the Angular frontend for production using the command ng build --prod. This will generate the static assets that we’ll later serve through a container.
+
+For .NET, we’ll need to package the backend API using dotnet publish.
+
+We’ll also need to be familiar with the OpenShift CLI to interact with the platform.
+
+Lastly, we need Dockerfiles for both the Angular and .NET projects to create container images that can be deployed."
+
+
+
+---
+
+Slide 5: Building Angular & .NET Docker Images
+
+Presenter Script: "Next, let’s discuss building Docker images for both the Angular and .NET applications:
+
+For Angular, after running the ng build command, we create a Dockerfile that uses Nginx to serve the static files.
+
+For .NET, we build and publish the API, then package it in a Docker image.
+
+
+Here’s a sample Dockerfile for each. By containerizing these applications, we can easily deploy them to OpenShift."
+
+
+---
+
+Slide 6: Pushing Docker Images to OpenShift Registry
+
+Presenter Script: "Once the Docker images are built, the next step is to push them to OpenShift’s internal image registry. First, we log in using oc login. Once authenticated, we push the images to the registry using docker push.
+
+If you have a CI/CD pipeline in place, this process can be automated. Pushing these images ensures that OpenShift can deploy them directly from its registry."
+
+
+---
+
+Slide 7: Deploying Angular & .NET to OpenShift
+
+Presenter Script: "Now, let’s talk about the actual deployment. Using the OpenShift CLI, we create new projects and deploy both the Angular and .NET applications. For each service, we use oc new-app to create the deployment configuration and oc expose to create routes for external access.
+
+This way, OpenShift automatically provisions routes and services, allowing seamless communication between the frontend and backend."
+
+
+---
+
+Slide 8: Configuring OpenShift for Scale
+
+Presenter Script: "OpenShift’s strength lies in its ability to scale. We can configure autoscalers to manage the number of running pods based on CPU usage or other metrics. For example, with the command oc autoscale, we can set up a horizontal autoscaler that scales up when traffic increases, ensuring our application is always responsive under load."
+
+
+---
+
+Slide 9: Monitoring and Logging
+
+Presenter Script: "Monitoring and logging are critical to ensuring smooth operation. OpenShift integrates with monitoring tools like Prometheus and Grafana, providing real-time metrics on the health of our application. We can also use an EFK stack—Elasticsearch, Fluentd, and Kibana—for logging, allowing us to trace issues and view logs centrally."
+
+
+---
+
+Slide 10: Best Practices
+
+Presenter Script: "Here are some best practices to keep in mind:
+
+Use OpenShift’s CI/CD pipelines to streamline your deployment process.
+
+Always scan Docker images for vulnerabilities before deployment.
+
+Perform rolling updates to minimize downtime.
+
+Utilize OpenShift’s environment variables and secrets for dynamic configuration, keeping sensitive data secure."
+
+
+
+---
+
+Slide 11: Challenges & Solutions
+
+Presenter Script: "There are a few common challenges when deploying on OpenShift:
+
+Networking issues between the frontend and backend can arise, which we can solve using OpenShift’s DNS-based service discovery.
+
+Managing different environments, like dev and prod, can be tricky, but using OpenShift’s config maps and secrets helps with dynamic configuration.
+
+
+These solutions help make deployments smoother and more reliable."
+
+
+---
+
+Slide 12: Q&A
+
+Presenter Script: "That wraps up the main content of the presentation. I’d love to hear your thoughts or answer any questions you might have about deploying an Angular and .NET application to OpenShift. Please feel free to ask anything."
+
+[Encourage engagement and invite the team to discuss specific points.]
+
+
+---
+
+Slide 13: Conclusion
+
+Presenter Script: "To summarize, we walked through the process of building, containerizing, and deploying Angular and .NET applications on OpenShift. We also covered scaling, monitoring, and best practices to ensure a successful deployment. Thank you all for your time, and I look forward to working together on implementing these processes."
+
+
+---
+
+Tips for Presenting:
+
+1. Engage your audience by asking questions or inviting them to share their experiences throughout the presentation.
+
+
+2. Use visuals like diagrams and Dockerfile examples to break up the content and make technical concepts easier to understand.
+
+
+3. Pace yourself, allowing time for key concepts to sink in.
+
+
+4. Be prepared to explain in more detail if anyone asks questions, especially during the Q&A session.
+
+
+
