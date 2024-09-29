@@ -1,0 +1,251 @@
+Here’s the suggested PowerPoint content based on the 10-minute presentation script:
+
+
+---
+
+Slide 1: Title Slide
+
+Title: Migrating from ASP.NET WebForms to Angular & .NET API with OpenShift Deployment
+
+Subtitle: Enhancing Scalability, Performance, and Monitoring with Dynatrace & Splunk
+
+Your Name: [Your Name]
+
+Date: [Presentation Date]
+
+
+
+---
+
+Slide 2: Agenda
+
+1. Overview of the Legacy ASP.NET WebForms Application
+
+2. Key Reasons for the Migration
+
+3. New Architecture and OpenShift Deployment
+
+4. Integration of Dynatrace and Splunk
+
+5. Live Demo and Architecture Diagram
+
+6. Benefits and Challenges
+
+7. Conclusion
+
+
+
+---
+
+Slide 3: Overview of the Legacy WebForms Application
+
+ASP.NET WebForms: Monolithic architecture
+
+Key Challenges:
+
+Difficult to scale
+
+Outdated UI and server-side logic
+
+Performance bottlenecks
+
+
+
+
+---
+
+Slide 4: Why Migrate to Angular and .NET API
+
+Key Drivers:
+
+Modern, dynamic user experience with Angular
+
+Decoupled, stateless architecture with .NET API
+
+Scalability and flexibility through OpenShift
+
+
+Benefits:
+
+Improved User Experience: Responsive, modern UI
+
+Easier Maintenance: Separation of frontend and backend
+
+Scalability: Independent scaling of frontend and backend
+
+
+
+
+---
+
+Slide 5: New Architecture and OpenShift Deployment
+
+Frontend (Angular):
+
+Dynamic, responsive UI interacting with the backend via HTTP
+
+
+Backend (.NET API):
+
+Stateless RESTful API handling business logic
+
+
+Deployment (OpenShift):
+
+Containerized Angular and .NET API services
+
+Automatic scaling and CI/CD pipelines
+
+
+
+
+---
+
+Slide 6: Architecture Diagram (Visual)
+
+Frontend (Angular)
+
+Backend (.NET API)
+
+OpenShift: Container orchestration, pods, scaling
+
+Dynatrace: Performance monitoring
+
+Splunk: Centralized logging
+
+
+(Include a simplified architecture diagram to visually represent the system)
+
+
+---
+
+Slide 7: Integration of Dynatrace and Splunk
+
+Dynatrace Monitoring:
+
+Real-time performance insights for Angular & .NET API
+
+End-to-end request tracing
+
+Alerts and anomaly detection
+
+
+Splunk Logging:
+
+Centralized log aggregation from both frontend and backend
+
+Query logs, dashboards, and real-time issue tracking
+
+
+
+
+---
+
+Slide 8: Live Demo Overview
+
+Angular Frontend:
+
+Responsive and dynamic user interface
+
+
+.NET API:
+
+Stateless API handling requests efficiently
+
+
+OpenShift Dashboard:
+
+Real-time container management and scaling
+
+
+Dynatrace Monitoring:
+
+Tracing requests from frontend to backend
+
+
+Splunk Logs:
+
+Real-time log aggregation and analysis
+
+
+
+
+---
+
+Slide 9: Benefits of Migration
+
+Scalability & Performance:
+
+OpenShift ensures independent scaling of frontend and backend.
+
+Dynatrace provides proactive system monitoring.
+
+
+Improved User Experience:
+
+Angular offers faster, more dynamic interfaces.
+
+
+Efficient Monitoring & Debugging:
+
+Splunk simplifies log management and analysis.
+
+
+
+
+---
+
+Slide 10: Challenges Faced
+
+Learning Curve:
+
+Transitioning to Angular, .NET API, OpenShift required upskilling.
+
+
+Legacy Code Refactoring:
+
+Migrating business logic from WebForms to a stateless API involved significant code refactoring.
+
+
+
+
+---
+
+Slide 11: Conclusion
+
+Successful migration from ASP.NET WebForms to a scalable, modular architecture using Angular and .NET API.
+
+Deployed using OpenShift for scalability and performance.
+
+Dynatrace and Splunk have enhanced monitoring and observability.
+
+Thank you!
+
+Any questions?
+
+
+
+---
+
+Slide 12: Architecture Diagram (Expanded) (Optional Slide)
+
+If you want to go deeper into architecture during the demo, consider an additional slide to break down container deployment, API endpoints, scaling strategy, and logging/monitoring flow with Dynatrace and Splunk.
+
+
+
+---
+
+Notes for Speaker (For Demo Slide)
+
+For Slide 8 (Live Demo Overview), as you present, show the live UI in Angular and use Postman for API testing.
+
+Show OpenShift’s dashboard to display how the containers are deployed and managed.
+
+Use Dynatrace to highlight real-time monitoring and demonstrate Splunk logs by querying logs related to recent operations.
+
+
+
+---
+
+Let me know if you'd like further tweaks for the content or need assistance with the diagram or visuals!
+
