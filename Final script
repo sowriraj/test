@@ -1,0 +1,276 @@
+Here’s the final 10-minute demo presentation script with OpenShift deployment, Dynatrace, and Splunk logging included:
+
+
+---
+
+Introduction: (1 min)
+
+Hello everyone!
+
+Today, I’ll be presenting our journey of migrating from an internal ASP.NET WebForms application to a modern solution using Angular for the frontend and .NET API for the backend, deployed in OpenShift containers. We’ve also integrated Dynatrace for monitoring and Splunk for logging.
+
+
+Agenda:
+
+1. Overview of the legacy ASP.NET WebForms application.
+
+
+2. Key reasons for the migration.
+
+
+3. New architecture and OpenShift deployment.
+
+
+4. Integration of Dynatrace and Splunk.
+
+
+5. Live demo and architecture diagram.
+
+
+6. Benefits and challenges.
+
+
+7. Conclusion.
+
+
+
+
+---
+
+1. Overview of the Legacy WebForms Application (1 min)
+
+Our internal website was originally built using ASP.NET WebForms, which, while functional, had several challenges:
+
+Monolithic architecture that hindered scalability.
+
+Outdated UI and difficulty in implementing modern web standards.
+
+Server-side logic that caused performance bottlenecks as the application grew.
+
+
+
+
+---
+
+2. Why Migrate to Angular and .NET API (1 min)
+
+The decision to migrate was driven by the need for scalability, performance improvements, and a modern UI:
+
+Angular enables us to deliver a responsive, dynamic user interface.
+
+.NET API provides a clear separation of concerns, allowing for a stateless, scalable backend.
+
+Modular architecture makes maintenance and future updates more manageable.
+
+
+
+
+---
+
+3. New Architecture and OpenShift Deployment (2 min)
+
+Architecture Diagram Overview (Show the architecture diagram slide)
+
+1. Frontend:
+
+Angular serves as the client-side application, providing a dynamic UI and communicating with the backend via API calls.
+
+
+
+2. Backend:
+
+The .NET API hosts RESTful services, handling all business logic and interactions with the database in a stateless manner.
+
+
+
+3. OpenShift Deployment:
+
+The Angular frontend and .NET API are deployed as containerized services in OpenShift.
+
+OpenShift provides automatic scaling, resource management, and a seamless CI/CD pipeline for continuous delivery.
+
+Each service (frontend and backend) runs in separate pods to ensure flexibility in scaling.
+
+
+
+
+
+---
+
+4. Integration of Dynatrace and Splunk (1 min)
+
+Dynatrace:
+
+We’ve integrated Dynatrace to monitor the application’s performance, giving us real-time insights into system health.
+
+Dynatrace provides:
+
+Application performance monitoring (APM) across the Angular frontend and .NET API.
+
+End-to-end tracing, which helps us identify bottlenecks across the system, from user requests to backend processing.
+
+Alerts and anomaly detection for proactive monitoring.
+
+
+
+Splunk for Logging:
+
+Splunk handles all logging and event management in our system.
+
+All application logs, errors, and system events are sent to Splunk for centralized logging, making it easier to trace and debug issues.
+
+Key Splunk Benefits:
+
+Aggregates logs from both the Angular frontend and .NET API backend.
+
+Allows us to create dashboards, perform queries, and analyze system health from a logging perspective.
+
+
+
+
+
+---
+
+5. Live Demo and Architecture Diagram (3 min)
+
+Live Demo: Now, let’s take a quick look at the migrated system.
+
+1. Angular Frontend:
+
+Here is the modern Angular UI. It’s responsive and dynamic, providing a much smoother user experience.
+
+I’ll walk through key workflows like data retrieval, form submissions, and navigation.
+
+
+
+2. .NET API:
+
+Using a tool like Postman, I’ll show how the .NET API processes requests and handles business logic independently of the frontend.
+
+
+
+3. OpenShift Dashboard:
+
+Here’s the OpenShift dashboard, where you can see the Angular and .NET API services running as separate containers.
+
+OpenShift allows us to monitor resource usage, scale containers automatically, and manage deployments.
+
+
+
+4. Dynatrace Dashboard:
+
+Now, I’ll show you Dynatrace in action, where we’re monitoring the real-time performance of both frontend and backend.
+
+You can see how user requests flow through the system, with Dynatrace tracing each request for performance metrics.
+
+
+
+5. Splunk Logs:
+
+Finally, I’ll show Splunk, where all logs from both services are aggregated.
+
+We use this for real-time monitoring and debugging, filtering logs to analyze any potential issues or errors.
+
+
+
+
+
+(Go back to the architecture diagram)
+
+Architecture Recap:
+
+We have a decoupled system with Angular as the frontend, .NET API for the backend, both containerized and deployed in OpenShift.
+
+Dynatrace monitors system performance, while Splunk handles centralized logging for better observability.
+
+
+
+
+---
+
+6. Benefits and Challenges (2 min)
+
+Benefits:
+
+Scalability and Performance:
+
+With OpenShift managing containers, we can scale the Angular frontend and .NET API independently as traffic grows.
+
+Dynatrace and Splunk give us complete visibility into system performance, helping to proactively identify and resolve issues.
+
+
+Improved User Experience:
+
+Angular enables a faster, more responsive interface, while the stateless .NET API ensures backend performance is optimized.
+
+
+Efficient Monitoring and Debugging:
+
+With Dynatrace for real-time monitoring and Splunk for centralized logging, we have streamlined the debugging process, leading to quicker issue resolution.
+
+
+
+Challenges:
+
+Learning Curve:
+
+The shift from WebForms to a containerized microservice architecture required the team to gain proficiency in new tools like Angular, .NET API, Docker, and OpenShift.
+
+
+Refactoring Legacy Code:
+
+Migrating business logic from the WebForms environment to an API-based architecture required significant refactoring efforts.
+
+
+
+
+---
+
+7. Conclusion (1 min)
+
+In summary, we’ve successfully migrated from ASP.NET WebForms to a modern, containerized architecture using Angular and .NET API, deployed in OpenShift.
+
+The integration of Dynatrace and Splunk has further enhanced our ability to monitor and manage system performance.
+
+Thank you for your attention! I’m happy to take any questions.
+
+
+
+---
+
+Architecture Diagram Notes: Your diagram should clearly illustrate the following:
+
+1. Frontend (Angular):
+
+Angular <-> Browser interaction.
+
+
+
+2. Backend (API):
+
+Angular <-> .NET API for business logic.
+
+
+
+3. OpenShift:
+
+Pods representing both Angular and .NET API running as containers.
+
+CI/CD pipeline automating deployment.
+
+
+
+4. Monitoring and Logging:
+
+Dynatrace monitoring both services.
+
+Splunk aggregating logs from the frontend and backend.
+
+
+
+
+
+---
+
+This final version incorporates all the key elements for a 10-minute presentation, including the OpenShift deployment, Dynatrace monitoring, and Splunk logging. Let me know if you need further refinements!
+
