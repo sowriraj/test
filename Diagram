@@ -1,0 +1,61 @@
+Architecture Diagram Presentation Script
+
+
+---
+
+Slide 1: Title – Architecture Overview
+
+"Today, I’ll walk you through the architecture of our application, highlighting key components like the Angular frontend, .NET API backend, OAuth authentication, Oracle database, and our deployment in OpenShift. We’ll also look at how we’ve integrated Splunk and Dynatrace for logging and monitoring."
+
+
+---
+
+Slide 2: Angular Frontend
+
+"Starting at the top of the architecture, we have the Angular frontend. This is the user interface layer that interacts with our backend through HTTP requests. All user interactions, like input forms, queries, or navigating the app, happen here. The Angular app is deployed as a static application in OpenShift, allowing scalable and responsive user experiences."
+
+
+---
+
+Slide 3: .NET API Backend
+
+"Next, the backend API is built with .NET, handling all the business logic and processing. The API exposes RESTful services that the Angular frontend communicates with. This layer handles operations such as CRUD actions, data processing, and any other server-side functionality. The API also interacts with the Oracle database and is containerized in OpenShift for ease of scaling and management."
+
+
+---
+
+Slide 4: OAuth Authentication
+
+"For authentication, we’ve implemented OAuth. The Angular frontend communicates with an OAuth server to authenticate users. Once authenticated, the OAuth server provides tokens that the frontend passes with each API request to the backend. This ensures secure, token-based access control across the system."
+
+
+---
+
+Slide 5: Oracle Database
+
+"At the database layer, we use Oracle. This stores all the persistent data such as user information, application data, and logs. The backend API makes direct connections to the Oracle database to fetch and store data, ensuring secure and optimized database operations."
+
+
+---
+
+Slide 6: Splunk & Dynatrace for Logging and Monitoring
+
+"To maintain visibility and performance, we’ve integrated Splunk and Dynatrace. All logs from the API are sent to Splunk for in-depth analysis and search capabilities, while Dynatrace provides real-time application performance monitoring. These tools help us track application behavior, monitor performance metrics, and quickly identify any issues."
+
+
+---
+
+Slide 7: OpenShift Deployment
+
+"Finally, the entire solution is deployed on OpenShift, providing a containerized environment for scaling and managing both the Angular frontend and .NET API backend. OpenShift ensures smooth operation of the containers, automated scaling, and orchestration of resources based on demand, making it easier to maintain and deploy new versions of the application."
+
+
+---
+
+Slide 8: Summary
+
+"In summary, this architecture ensures a robust and scalable application, with seamless communication between the frontend and backend, secure authentication, reliable data storage in Oracle, and powerful logging and monitoring using Splunk and Dynatrace, all orchestrated in OpenShift. Thank you."
+
+
+---
+
